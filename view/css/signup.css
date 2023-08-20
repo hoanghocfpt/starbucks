@@ -194,5 +194,6 @@
 }
 .fieldStatus_text .fieldStatus_item svg{
     width: 22px;
+    flex-shrink: 0;
     color: red;
 }

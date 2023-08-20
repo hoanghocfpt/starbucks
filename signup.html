@@ -64,48 +64,31 @@
                         <h3>Thông tin cá nhân</h3>
                         <div class="fieldBase">
                             <div class="input_text">
-                                <input type="text" value="" name="firstname" id="" required>
+                                <input type="text" value="" name="firstname" id="firstname" required>
                                 <label class="label" for="">* Tên của bạn</label>
                             </div>    
                         </div>
-                        <div class="fieldStatus_text">
-                            <div class="fieldStatus_item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                                <span>Enter your last name</span>
-                            </div>
-                            <div class="fieldStatus_item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                                <span>Enter your last name</span>
-                            </div>
-                        </div>
+                        <div class="fieldStatus_text errorinputfirstname"></div>
                         <div class="fieldBase">
                             <div class="input_text">
-                                <input type="text" value="" name="lasttname" id="" required>
+                                <input type="text" value="" name="lastname" id="lastname" required>
                                 <label class="label" for="">* Họ của bạn</label>
                             </div>
                         </div>
-                        <div class="fieldStatus_text">
-                           
-                        </div>
+                        <div class="fieldStatus_text errorinputlastname"></div>
                     </div>
                     <div class="personal_information">
                         <h3>Bảo mật tài khoản</h3>
                         <div class="fieldBase">
                             <div class="input_text">
-                                <input type="text" value="" name="email" id="" required>
+                                <input type="text" value="" name="email" id="email" required>
                                 <label class="label" for="">* Địa chỉ email</label>
                             </div>
                         </div>
-                        <div class="fieldStatus_text">
-                            
-                        </div>
+                        <div class="fieldStatus_text errorinputemail"></div>
                         <div class="fieldBase">
                             <div class="input_password">
-                                <input type="password" value="" name="password" id="" required>
+                                <input type="password" value="" name="password" id="password" required>
                                 <div class="show_password">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                                         <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
@@ -115,9 +98,7 @@
                                 <label for="">* Mật khẩu</label>
                             </div>
                         </div>
-                        <div class="fieldStatus_text">
-                            
-                        </div>
+                        <div class="fieldStatus_text errorinputpassword"></div>
                     </div>
                     
                     <div class="checkbox">
@@ -183,5 +164,8 @@
             </div>
         </footer>
     </div>
+    <!-- JS  -->
+    <script src="view/js/validFormSignup.js"></script>
+    <script src="view/js/showPassword.js"></script>
 </body>
 </html>
