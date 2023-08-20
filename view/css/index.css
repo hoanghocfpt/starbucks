@@ -1,0 +1,25 @@
+
+.banner{
+    max-width: 100vw;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: calc(50vw - 4px) calc(50vw - 4px);
+    grid-template-rows: repeat(2, calc(25vw - 6px));
+    background-color: #edebe9;
+}
+.banner a{
+    display: block;
+    overflow: hidden;
+}
+.banner a:hover img{
+    scale: 1.01;
+}
+.banner a img{
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease-in-out;
+    object-fit: cover;
+}
+.banner a:first-child{
+    grid-row: 1 / -1;
+}
