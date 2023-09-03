@@ -54,7 +54,6 @@ function checkInputText(nameInput,message){
     }
   })
   nameInput.addEventListener('input', function(){
-    console.log(this.parentNode.parentNode);
     if(this.value === ''){
       document.querySelector(`.errorinput${this.name}`).innerHTML = `<div class="fieldStatus_item">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -84,7 +83,6 @@ function checkInputEmail(nameInput,message){
     }
   })
   nameInput.addEventListener('input', function(){
-    console.log(emailPattern.test(nameInput.value));
     if(!emailPattern.test(nameInput.value)){
       document.querySelector(`.errorinput${this.name}`).innerHTML = `<div class="fieldStatus_item">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -171,8 +169,10 @@ checkInputPassword(inputPassword);
 
 
 function validFormSignup(){
-
-
-  return 
+  var result = false;
+  if(checkInputText === true && checkInputText === true && checkInputEmail === true && checkInputPassword === true){
+    result = true;
+  }
+return false;
 }
-  var form = document.querySelector('form');
+var form = document.querySelector('form');

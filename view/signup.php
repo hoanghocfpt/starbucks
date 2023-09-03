@@ -59,7 +59,7 @@
             <h1>Tạo một tài khoản</h1>
             <div class="signup_container">
                 <span>* chỉ ra trường bắt buộc</span>
-                <form action="">
+                <form action="" method="post">
                     <div class="personal_information">
                         <h3>Thông tin cá nhân</h3>
                         <div class="fieldBase">
@@ -114,7 +114,7 @@
                         </label>
                     </div>
                     <div class="btn_signup">
-                        <input type="submit" name="signup" value="Tạo tài khoản">
+                        <input type="submit" name="signup" value="Tạo tài khoản" onsubmit="validFormSignup()">
                     </div>
                 </form>
 
