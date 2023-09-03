@@ -17,6 +17,10 @@
                 include_once 'view/cart.php';
                 
                 break;
+            case 'product':
+                include_once 'view/product.php';
+                
+                break;
             case 'signup':
                 include_once 'view/signup.php';
                 
