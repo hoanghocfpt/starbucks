@@ -3,18 +3,18 @@
             <ol>
                 <li><a href="#">Thực đơn</a></li>
                 <li><a href="#">Danh mục</a></li>
-                <li>Tên sản phẩm</li>
+                <li><?php echo $product_name ?></li>
             </ol>
         </div>
 
         <div class="product_container">
             <div class="header_product_container">
                 <div class="product_img">
-                    <img src="view/images/banhnuongsocola.jpg" alt="">
+                    <img src="<?php echo $product_image ?>" alt="">
                 </div>
                 <div class="product_text">
-                    <div class="product_name">Bánh Quy Mocha Frappuccino®</div>
-                    <div class="product_price">200.000đ</div>
+                    <div class="product_name"><?php echo $product_name ?></div>
+                    <div class="product_price"><?php echo number_format($product_price,0,',','.').'đ' ?></div>
                 </div>
             </div>
             <div class="body_product_container">

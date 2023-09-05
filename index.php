@@ -9,6 +9,7 @@
 
                 break;
             case 'menu':
+                include_once 'model/menu.php';
                 include_once 'view/menu.php';
                 
                 break;
@@ -18,6 +19,7 @@
                 
                 break;
             case 'product':
+                include_once 'model/product.php';
                 include_once 'view/product.php';
                 
                 break;
