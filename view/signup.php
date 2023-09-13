@@ -3,7 +3,7 @@
             <h1>Tạo một tài khoản</h1>
             <div class="signup_container">
                 <span>* chỉ ra trường bắt buộc</span>
-                <form action="" method="post">
+                <form action="" method="post" onsubmit=" return validFormSignup()">
                     <div class="personal_information">
                         <h3>Thông tin cá nhân</h3>
                         <div class="fieldBase">
@@ -58,13 +58,15 @@
                         </label>
                     </div>
                     <div class="btn_signup">
-                        <input type="submit" name="signup" value="Tạo tài khoản" onsubmit="validFormSignup()">
+                        <input type="submit" name="signup" value="Tạo tài khoản">
                     </div>
                 </form>
 
             </div>
    
         </div>
+        <script src="view/js/validFormSignup.js"></script>
+        <script src="view/js/showPassword.js"></script>
 
 
  

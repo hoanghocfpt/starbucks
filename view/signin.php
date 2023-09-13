@@ -35,9 +35,10 @@
             <div class="join_starbucks_rewards">
                 <h2>JOIN STARBUCKS® REWARDS</h2>
                 <p>Tham gia Phần thưởng Starbucks® để kiếm đồ ăn và thức uống miễn phí, được nạp thêm miễn phí, thanh toán và đặt hàng bằng điện thoại của bạn, v.v.</p>
-                <a href="#">Tham gia ngay</a>
+                <a href="index.php?p=signup">Tham gia ngay</a>
             </div>
         </div>
+        <script src="js/validFormSignup.js"></script>
 
 
       

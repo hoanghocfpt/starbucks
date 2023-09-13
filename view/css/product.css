@@ -91,8 +91,11 @@
     position: absolute;
     width: 100%;
 }
+.product_container .body_product_container .left{
+    width: 350px;
+}
 .product_container .body_product_container .size_options{
-    width: 300px;
+   
 }
 .product_container .body_product_container .size_options .size_option{
     display: flex;
@@ -235,6 +238,6 @@
     color: #fff;
     font-size: 16px;
     font-weight: 600;
-    width: 300px;
+    width: 100%;
     border-radius: 10px;
 }
