@@ -159,7 +159,7 @@
 
 
 .product_container .body_product_container .included{
-    flex: 1;
+    /* flex: 1; */
 }
 .product_container .body_product_container .included form{
     padding: 20px 10px;
@@ -240,4 +240,36 @@
     font-weight: 600;
     width: 100%;
     border-radius: 10px;
+}
+
+.product_container .body_product_container .right{
+    flex: 1;
+}
+
+
+.product_container .body_product_container .right .tabs{
+    display: flex;
+    justify-content: center;
+}
+.product_container .body_product_container .right .tabs div{
+    padding: 12px 20px;
+    /* transition: all .5s ease-in-out; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+}
+.product_container .body_product_container .right .tab_container .feedback_container{
+    display: none;
+}
+.product_container .body_product_container .right .tabs div.active{
+    color: #00754A;
+    border-bottom: 2px solid #00754A;
+}
+
+.product_container .body_product_container .right .tab_container{
+    padding: 15px 30px;
 }

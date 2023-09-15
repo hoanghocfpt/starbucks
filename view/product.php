@@ -108,10 +108,21 @@
                     </div>
                 </div>
                 <div class="right">
-                    
+                    <div class="tabs">
+                        <div class="deltail active" id="deltail_tab">Chi tiết sản phẩm</div>
+                        <div class="feedback" id="feedback_tab">Đánh giá và phản hồi</div>
+                    </div>
+                    <div class="tab_container">
+                        <div class="deltail_container">
+                            <?php echo $product_des ?>
+                        </div>
+                        <div class="feedback_container">
+                            <?php echo 'Chưa có đánh giá nào cho sản phẩm này.' ?>
+                        </div>
+                    </div>
                 </div>
             </div>
             
 
         </div>
-
+<script src="view/js/tabsProduct.js"></script>

@@ -61,3 +61,9 @@
                 </div>
             </nav>
         </header>
+        <div class="search">
+            <div class="search_input">
+                <input type="text" placeholder="Tìm kiếm sản phẩm">
+                <button><img src="view/images/search.svg" alt=""></button>
+            </div>
+        </div>
