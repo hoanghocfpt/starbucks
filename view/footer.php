@@ -40,4 +40,5 @@
         </footer>
     </div>
 </body>
+<script src="view/js/searchPopup.js"></script>
 </html>

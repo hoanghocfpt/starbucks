@@ -1,3 +1,4 @@
+
 header{
     height: 96px;
     box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
@@ -17,7 +18,60 @@ header nav{
     width: 100%;
     
 }
+.search_popup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(52,58,70,.8);
+    z-index: 999999;
+    display: none;
+}
 
+.search_popup.active{
+    display: flex;
+}
+.search_popup.active ~ body{
+        
+}
+.search_popup .search_popup_container{
+    padding: 14px 24px;
+    width: 50%;
+    height: 90%;
+    border-radius: 26px;
+    overflow: hidden;
+    background-color: #fff;
+    
+}
+
+.search_popup .search_popup_container .search_input{
+    width: 100%;
+    height: 46px;
+    border-radius: 18px;
+    background-color: #EBECF1;
+    display: flex;
+    padding: 0 12px;
+    align-items: center;
+}
+
+.search_popup .search_popup_container .search_input svg{
+    color: #969FAE;
+    width: 16px;
+}
+.search_popup .search_popup_container .search_input input{
+    width: 100%;
+    padding: 0 8px;
+    letter-spacing: .4px;
+    /* color: #969FAE; */
+    font-weight: 600;
+    background-color: #EBECF1;
+    border: none;
+    outline: none;
+}
 header nav .nav_slide{
     width: 100%;
     padding-left: 24px;
@@ -54,9 +108,10 @@ header nav .nav_slide .nav_icon{
     justify-content: right;
     gap: 20px;
 }
-header nav .nav_slide .nav_icon a{
+header nav .nav_slide .nav_icon .icon_item{
     color: #000;
+    cursor: pointer;
 }
-header nav .nav_slide .nav_icon a svg{
+header nav .nav_slide .nav_icon .icon_item svg{
     width: 26px;
 }
