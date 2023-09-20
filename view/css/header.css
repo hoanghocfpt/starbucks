@@ -35,9 +35,9 @@ header nav{
 .search_popup.active{
     display: flex;
 }
-.search_popup.active ~ body{
-        
-}
+/* .search_popup.active ~ body{
+    overflow: hidden;
+} */
 .search_popup .search_popup_container{
     padding: 14px 24px;
     width: 50%;
