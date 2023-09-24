@@ -20,29 +20,33 @@ document.querySelector('.search_popup').addEventListener('click', (e) => {
 
 document.querySelector('#inputSearch').addEventListener('keyup', function() {
     var input = this.value;
-    // Tạo một đối tượng XMLHttpRequest
-    var xhr = new XMLHttpRequest();
+    if(input.length > 0){
+        // Tạo một đối tượng XMLHttpRequest
+        var xhr = new XMLHttpRequest();
 
-    // Thiết lập phương thức và URL của request
-    xhr.open("GET", "model/ajax/searchProduct.php?name="+input, true);
+        // Thiết lập phương thức và URL của request
+        xhr.open("GET", "model/ajax/searchProduct.php?name="+input, true);
 
-    // Xử lý sự kiện khi request hoàn thành
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            // Parse JSON response
-            var data = JSON.parse(xhr.responseText);
+        // Xử lý sự kiện khi request hoàn thành
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                // Parse JSON response
+                var data = JSON.parse(xhr.responseText);
 
-            var kq = "";
-            for (let i = 0; i < data.length; i++) {
-                const element = data[i];
-                kq += `<div>Tên sản phẩm: ${element.name}</div>
-                <div>Giá: ${element.price}</div>`;
-                
+                var kq = "";
+                for (let i = 0; i < data.length; i++) {
+                    const element = data[i];
+                    kq += `<div>Tên sản phẩm: ${element.name}</div>
+                    <div>Giá: ${element.price}</div>`;
+                    
+                }
+                document.querySelector(".search_result").innerHTML = kq;
             }
-            document.querySelector(".search_result").innerHTML = kq;
-        }
-    };
+        };
 
-    // Gửi request
-    xhr.send();
+        // Gửi request
+        xhr.send();
+        }else{
+            document.querySelector(".search_result").innerHTML = "";
+        }
 });
